@@ -15,17 +15,13 @@
 /** Identifier for nodes in ASTs (for optimization use) */
 using Identifier = std::string;
 
-/**
- * Enumerates the supported expression types. 
- */
+/** Enumerates the supported expression types. */
 enum class ExprType {
   NUMERIC_CONSTANT,
   BINARY_ADDITION,
 };
 
-/**
- * The base class for all expressions types.
- */
+/** The base class for all expressions types. */
 class Expr {
 public:
   /** Pure virtual destructor forces override */
